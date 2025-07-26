@@ -6,15 +6,14 @@ metadata:
     purpose: service-demo
 
 spec:
-  service:
-    selector:
-      purpose: service-demo
-      project: roboshop
-      environment: dev
-    ports:
-      - protocol: TCP
-        port: 80 # service port
-        targetPort: 80 # container port
+  selector:
+    purpose: service-demo
+    project: roboshop
+    environment: dev
+  ports:
+    - protocol: TCP
+      port: 80 # service port
+      targetPort: 80 # container port
 
 
 ---
